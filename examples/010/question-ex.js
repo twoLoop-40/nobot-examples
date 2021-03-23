@@ -14,7 +14,7 @@ const nameCheck = (enteredName, stopProcess) => {
     return name? name : stopProcess(outMessage);
 };
 
-const makeDir = (projectName, stopPrecess) => {
+const makeDir = (projectName, stopProcess) => {
     let projectPath = path.join(__dirname, projectName);
     const message = `${projectPath} already exits`;
 
